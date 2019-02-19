@@ -1,5 +1,7 @@
 ---
 layout: default
+scripts:
+    - login.js
 ---
 
 <div class="container" style="margin-top: 5rem;">
@@ -24,7 +26,11 @@ layout: default
                 <a href="forgot.html">Forgot password</a>
                 </p>
 
-                <button type="submit" class="btn btn-primary">Log In</button>
+                <button type="submit" class="btn btn-primary" id="login-button">Log In</button>
+
+                <div class="alert alert-danger" id="incorrect-password" role="alert" style="display: none; margin-top: 1rem;">
+                    Sorry, that password is incorrect! <a href="forgot.html">Forgot your password?</a>
+                </div>
                 </form>
             </div>
         </div>
