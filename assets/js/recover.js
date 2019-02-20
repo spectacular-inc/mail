@@ -25,7 +25,7 @@ $(function(){
         }
 
         if (allCorrect === true) {
-            
+            // show button to log in
         }
 
 
