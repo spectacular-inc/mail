@@ -18,7 +18,18 @@ scripts:
             </ul>
         </div>
         <div class="col-md-8">
-
+            <div class="list-group">
+                {% for email in site.data.emails %}
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">{{ email.subject }}</h5>
+                        <small>{{ email.date }}</small>
+                        </div>
+                        <p class="mb-1">{{ email.people }}</p>
+                        <small>{{ email.emails.last.message }}</small>
+                    </a>
+                {% endfor %}
+            </div>
         </div>
     </div>
 </div>
