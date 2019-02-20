@@ -1,7 +1,7 @@
 ---
 layout: default
 scripts:
-    - forgot.js
+    - recover.js
 ---
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -13,22 +13,33 @@ scripts:
 </nav>
 
 <div class="container">
-    <h3>Forgot your password?</h3>
+    <div style="text-align: center;">
+        <img src="{{site.baseurl}}/assets/img/sonia-logo.jpg" class="img-responsive" style="width: 256px">
+    </div>
+    <h3>Let's help you get back into your account, Priya</h3>
 
-    <p>First, tell us your email address:</p>
+    <p>Just answer these security questions and we'll get you back in.</p>
+
 
     <form>
         <div class="form-group">
-            <input type="email" class="form-control" id="forgot-email" placeholder="Enter your email">
+            <label for="question1">What is your dog's name?</label>
+            <input type="email" class="form-control" id="question1" placeholder="Enter your answer">
+        </div>
+        <div class="form-group">
+            <label for="question2">What is your doctor's last name?</label>
+            <input type="email" class="form-control" id="question2" placeholder="Enter your answer">
+        </div>
+        <div class="form-group">
+            <label for="question3">What street do you live on?</label>
+            <input type="email" class="form-control" id="question3" placeholder="Enter your answer">
+        </div>
+        <div class="form-group">
+            <label for="question4">What's your favorite drink?</label>
+            <input type="email" class="form-control" id="question4" placeholder="Enter your answer">
         </div>
 
-        <div class="alert alert-success" id="correct-email" role="alert" style="display: none; margin-top: 1rem;">
-            Hi, Priya!
-        </div>
-        <div class="alert alert-danger" id="incorrect-email" role="alert" style="display: none; margin-top: 1rem;">
-            Sorry, we can't find anyone with that email address!
-        </div>
-
-        <a href="#" class="btn btn-primary disabled" id="login-button" disabled>Next</a>
+        <button class="btn btn-primary" id="check-button">Check answers</button>
+        <!-- <a href="#" class="btn btn-secondary btn-lg disabled" id="login-button" disabled>Log In</a> -->
      </form>
 </div>
