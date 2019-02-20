@@ -25,8 +25,7 @@ $(function(){
         }
 
         if (allCorrect === true) {
-            // show button to log in and hide the check button
-            $('#check-button').hide();
+            // show button to log in
             $('#login-button').attr('href','pdesai-inbox.html').show();
         }
     });
