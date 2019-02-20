@@ -1,0 +1,98 @@
+- subject: Lost badge
+  date: April 21, 2099
+  people: Estella, me
+  emails:
+    - from: Priya Desai
+      from_email: pdesai@spectacular.com
+      to: Estella Lee
+      to_email: estella@spectacular.com
+      message: |
+        Estella, where on earth did you put my badge?! I swear I put it
+        in my backpack but I can't find it anywhere.
+    - from: Estella Lee
+      from_email: estella@spectacular.com
+      to: Priya Desai
+      to_email: pdesai@spectacular.com
+      message: |
+        I swear I have didn't do anything, Priya! You told me to keep your
+        backpack safe when that robot tour group came so I used that lock
+        on your desk to secure it!
+
+        I'm so, so sorry to make you mad at me! I just wanted to help!
+    - from: Priya Desai
+      from_email: pdesai@spectacular.com
+      to: Estella Lee
+      to_email: estella@spectacular.com
+      message: |
+        Right... so what's the code?
+    - from: Estella Lee
+      from_email: estella@spectacular.com
+      to: Priya Desai
+      to_email: pdesai@spectacular.com
+      message: |
+        Oh, it's on my desk! I just remember I accidentally wrote
+        the code down backwards!
+    - from: Priya Desai
+      from_email: pdesai@spectacular.com
+      to: Estella Lee
+      to_email: estella@spectacular.com
+      message: |
+        Why on earth...?
+- subject: London trip itinerary
+  date: April 15, 2099
+  people: Mario, Devin, me
+  emails:
+    - from: Priya Desai
+      from_email: pdesai@spectacular.com
+      to: Mario Clemente
+      to_email: marioc@spectacular.com
+      message: |
+        Hey Mario, when is our London marketing trip next month?
+    - from: Mario Clemente
+      from_email: marioc@spectacular.com
+      to: Devin Cartwright
+      to_email: dcart@spectacular.com
+      message: |
+        Not sure, Devin?
+    - from: Devin Cartwright
+      from_email: dcart@spectacular.com
+      to: Mario Clemente
+      to_email: marioc@spectacular.com
+      message: |
+        It's May 5th, 2099! As long as we don't go out of business
+        by then hahahahaha
+    - from: Priya Desai
+      from_email: pdesai@spectacular.com
+      to: Devin Cartwright
+      to_email: dcart@spectacular.com
+      message: |
+        Don't jinx us, Devin! Seriously! We'll be fine.
+- subject: Guidelines for next version of Sonia Specs
+  date: April 12, 2099
+  people: Devin, me
+  emails:
+    - from: Devin Cartwright
+      from_email: dcart@spectacular.com
+      to: Priya Desai
+      to_email: pdesai@spectacular.com
+      message: |
+        Heyo Priya, what do you think of these new designs for
+        the next version of the Sonia Specs? They look pretty
+        sick, if you ask me.
+    - from: Priya Desai
+      from_email: pdesai@spectacular.com
+      to: Devin Cartwright
+      to_email: dcart@spectacular.com
+      message: |
+        Looks fine to me, but I worry the nose bridge is a little too wide
+        for kids to wear them comfortably.
+
+        (Although should we really be selling to kids? I guess, if they
+        want these glasses so badly...)
+    - from: Devin Cartwright
+      from_email: dcart@spectacular.com
+      to: Priya Desai
+      to_email: pdesai@spectacular.com
+      message: |
+        Good catch! I'll get on that after my trip to New Zealand this weekend.
+        Welp, my teleport pod awaits! Catch ya later!
