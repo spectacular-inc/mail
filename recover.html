@@ -4,16 +4,7 @@ scripts:
     - recover.js
 ---
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container">
-    <a class="navbar-brand" href="#">
-        <img src="{{ site.baseurl }}/assets/img/sonia-logo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-        Spec-tacular Mail
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-</nav>
+{% include navbar.html %}
 
 <div class="container">
     <h3>Let's help you get back into your account, Priya</h3>
@@ -64,6 +55,6 @@ scripts:
         </div>
      </form>
 
-    <button class="btn btn-primary" id="check-button">Check answers</button>
-    <a href="#" class="btn btn-success" id="login-button" style="display: none;">Log In</a>
+    <button class="btn btn-primary" id="check-button">Check answers</button><br>
+    <a href="#" class="btn btn-success" id="login-button" style="display: none;">Go to Inbox</a>
 </div>
