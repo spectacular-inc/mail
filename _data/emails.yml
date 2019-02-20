@@ -1,6 +1,7 @@
 - subject: Lost badge
   date: April 21, 2099
   people: Estella, me
+  id: 1
   emails:
     - from: Priya Desai
       from_email: pdesai@spectacular.com
@@ -41,6 +42,7 @@
 - subject: London trip itinerary
   date: April 15, 2099
   people: Mario, Devin, me
+  id: 2
   emails:
     - from: Priya Desai
       from_email: pdesai@spectacular.com
@@ -67,9 +69,10 @@
       to_email: dcart@spectacular.com
       message: |
         Don't jinx us, Devin! Seriously! We'll be fine.
-- subject: Guidelines for next version of Sonia Specs
+- subject: Designs for next version of Sonia Specs
   date: April 12, 2099
   people: Devin, me
+  id: 3
   emails:
     - from: Devin Cartwright
       from_email: dcart@spectacular.com

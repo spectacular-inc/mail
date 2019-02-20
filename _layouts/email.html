@@ -1,0 +1,37 @@
+ {% include header.html %}
+
+ {% include navbar.html %}
+
+ <div class="container">
+     <div class="row">
+         <div class="col-md-4">
+             <a href="../pdesai-inbox.html" class="btn btn-primary">
+                <i class="fa fa-fw fa-arrow-left"></i> Back to inbox
+             </a>
+        </div>
+        <div class="col-md-8">
+            {% for email in site.data.emails %}
+                {% if email.id == page.id %}
+                    <h3>
+                        {{ email.subject }}
+                    </h3>
+
+                    <div class="list-group list-group-flush">
+                    {% for email in email.emails %}
+                        <div class="list-group-item">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">{{ email.from }} ({{ email.from_email }})</h5>
+                                <small>20 years ago</small>
+                            </div>
+                            <p class="mb-1 text-muted">to {{ email.to }} ({{ email.to_email }})</p>
+                            <p class="mb-1">{{ email.message }}</p>
+                        </div>
+                    {% endfor %}
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+ {% include footer.html %}
