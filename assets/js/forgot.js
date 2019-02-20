@@ -1,5 +1,5 @@
 $(function(){
-    $('#forgot-email').on('keyup keydown', function(){
+    $('#forgot-email').on('keyup keydown', function(e){
         var email = "pdesai@spectacular.com";
 
         if ($('#forgot-email').val() === email) {

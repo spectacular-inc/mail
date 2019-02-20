@@ -1,5 +1,5 @@
 $(function(){
-    $('#security-validation').on('submit', function(){
+    $('#check-button').on('click', function(e){
 
         var correctAnswers = [
             ['sherlock'],
@@ -25,11 +25,9 @@ $(function(){
         }
 
         if (allCorrect === true) {
-            // show button to log in
+            // show button to log in and hide the check button
+            $('#check-button').hide();
+            $('#login-button').attr('href','pdesai-inbox.html').show();
         }
-
-
-        // stop a page reload so just always return false
-        return false;
     });
 });
