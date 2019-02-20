@@ -21,25 +21,46 @@ scripts:
     <p>Just answer these security questions and we'll get you back in.</p>
 
 
-    <form novalidate class="needs-validation">
+    <form novalidate id="security-validation">
         <div class="form-group">
             <label for="question1">What is your dog's name?</label>
             <input type="text" class="form-control" id="question1" placeholder="Enter your answer" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
             <div class="invalid-feedback">
-                WRONG!
+                Sorry, try again!
             </div>
         </div>
         <div class="form-group">
             <label for="question2">What is your doctor's last name?</label>
             <input type="text" class="form-control" id="question2" placeholder="Enter your answer" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+            <div class="invalid-feedback">
+                Sorry, try again!
+            </div>
         </div>
         <div class="form-group">
             <label for="question3">What street do you live on?</label>
             <input type="text" class="form-control" id="question3" placeholder="Enter your answer" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+            <div class="invalid-feedback">
+                Sorry, try again!
+            </div>
         </div>
         <div class="form-group">
             <label for="question4">What's your favorite drink?</label>
             <input type="text" class="form-control" id="question4" placeholder="Enter your answer" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+            <div class="invalid-feedback">
+                Sorry, try again!
+            </div>
         </div>
 
         <button class="btn btn-primary" id="check-button" type="submit">Check answers</button>
