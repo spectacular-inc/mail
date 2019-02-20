@@ -3,6 +3,5 @@ ports:
     onOpen: open-browser
 
 tasks:
-- init:
-  command: gem install bundler jekyll && bundle install && bundle exec jekyll serve --host 0.0.0.0
+- command: bundle install && bundle exec jekyll serve --host 0.0.0.0
 - command: git status && git pull
