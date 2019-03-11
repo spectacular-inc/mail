@@ -15,12 +15,24 @@ scripts:
                     <h6 class="card-subtitle mb-2 text-muted">Log in with your @spectacular.com account</h6>
                 </div>
 
-                <form>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" autocomplete="off" placeholder="Enter your email">
-                </div>
-                <div class="form-group">
+                <form id="username-form">
+                    <div class="form-group">
+                        <label for="input-email">Email address</label>
+                        <input type="email" class="form-control" id="input-email" autocomplete="off" placeholder="Enter your email">
+                    </div>
+                    <button class="btn btn-primary">Next</button>
+                </form>
+                <form id="password-form" class="hidden">
+                    <p>
+                        Hi, <span class="$firstname"></span>!
+                        (<span class="$email"></span>)
+                    </p>
+                    <div class="form-group">
+                        <label for="input-password">Password</label>
+                        <input type="password" class="form-control" id="input-password" autocomplete="off" placeholder="Enter your password">
+                    </div>
+                </form>
+                <!-- <div class="form-group">
                     <label for="exampleInputPassword1">Password</label>
                     <input type="password" class="form-control" id="exampleInputPassword1" autocomplete="off" placeholder="Enter your password">
                 </div>
@@ -33,7 +45,7 @@ scripts:
 
                 <div class="alert alert-danger" id="incorrect-password" role="alert" style="display: none; margin-top: 1rem;">
                     Sorry, that password is incorrect! <a href="forgot.html">Forgot your password?</a>
-                </div>
+                </div> -->
                 </form>
             </div>
         </div>
