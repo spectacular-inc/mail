@@ -7,7 +7,7 @@ const accounts = [
     {
         email: "estella@spectacular.com",
         name: "Estella Lee",
-        password: "password"
+        password: "qwerty123!"
     },
     {
         email: "dcart@spectacular.com",
