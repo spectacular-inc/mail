@@ -21,12 +21,13 @@
                     <div class="card">
                         <div class="card-header">
                             {{ email.subject }} ({{ email.date }})
-                            -- {{ email.to }}, {{ email.from }}
+                            -- {{ email.to }}@spectacular.com, {{ email.from }}@spectacular.com
                         </div>
                         <ul class="list-group list-group-flush">
                             {% for message in email.messages %}
                                 <li class="list-group-item">
-                                    <p>From: {{ message.from }}, To: {{ message.to }}</p>
+                                    <p><em>From: {{ message.from }}@spectacular.com <br>
+                                        To: {{ message.to }}@spectacular.com</em></p>
                                     <p>{{ message.text }}
                                 </li>
                             {% endfor %}
