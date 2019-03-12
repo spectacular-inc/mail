@@ -1,24 +1,28 @@
 const accounts = [
     {
         email: "marioc@spectacular.com",
+        username: "marioc",
         name: "Mario Clemente",
         password: "TnTyLX",
         slug: "iTnPYiDLVvXPy0sW6N8y"
     },
     {
         email: "estella@spectacular.com",
+        username: "estella",
         name: "Estella Lee",
         password: "qwerty123!",
         slug: "4DwE8vDhUZHqBSRfnF9V"
     },
     {
         email: "dcart@spectacular.com",
+        username: "dcart",
         name: "Devin Cartwright",
         password: "Picatsso",
         slug: "8NrmU2BIflHwa2Hzxhuf"
     },
     {
         email: "pdesai@spectacular.com",
+        username: "pdesai",
         name: "Priya Desai",
         password: "landofthefreehomeofthebingers",
         slug: "2lahVBUNiYJNCBJx3FXA",
@@ -30,15 +34,27 @@ const accounts = [
 const securityQuestions = [
     {
         id: 1,
-        question: "What is your favorite book?",
+        question: "What is your favorite children's book?",
         hint: "It's the key to my heart",
         answers: ["Alice in Wonderland"]
     },
     {
         id: 2,
         question: "What is your doctor's name?",
-        hint: "I swear I wrote it down somewhere...",
+        hint: "I swear I wrote it down somewhere",
         answers: ["Gutierrez", "Dr. Gutierrez", "Dr Gutierrez", "Doctor Gutierrez"]
+    },
+    {
+        id: 3,
+        question: "What was your high school mascot?",
+        hint: "I saved it somewhere",
+        answers: ["Bearnard"]
+    },
+    {
+        id: 4,
+        question: "What is your dog's name?",
+        hint: "I spend so much time on emails that I never see him again :(",
+        answers: ["Sherlock"]
     }
 ];
 
@@ -46,6 +62,10 @@ let currentSecurityQuestionIndex = 0;
 
 // the person who is logging in
 let activeUser = null;
+
+// jekyll-like consts
+const SITE_BASEURL = "/mail";
+
 
 
 $(() => {
@@ -89,6 +109,11 @@ $(() => {
         if (enteredPassword === activeUser.password) {
             // right password :)
             $('#incorrect-password').hide();
+
+            // go to inbox
+            // URL = the base + /inbox + user's username + slug
+            window.location.href = SITE_BASEURL + "/inbox/" +
+                activeUser.username + "-" + activeUser.slug + ".html";
         }
         else {
             // wrong password :(
