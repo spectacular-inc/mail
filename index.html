@@ -49,7 +49,8 @@ scripts:
     </div>
 </div>
 
-<div class="modal fade" id="forgot-password-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="forgot-password-modal" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">
   <div class="modal-dialog modal-xl" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -64,24 +65,35 @@ scripts:
             Let's help you get your password. Just answer these security questions.
         </p>
 
-        <h2>Question #<span class="field-security-question-number"></span></h2>
+        <h2>Question
+            <strong class="field-security-question-number"></strong>
+            of <span class="field-security-question-total"></span></h2>
 
        <div class="form-group">
-            <label for="security-question" class="field-security-question"></label>
-            <input type="text" class="form-control" id="security-question"
+            <label for="security-question" class="field-security-question-text"></label>
+            <input type="text" class="form-control" id="security-question-input"
                 placeholder="Enter your answer" autocomplete="off" required>
-            <div class="valid-feedback">
-                Looks good!
+            <button class="btn btn-primary" id="security-question-check">Check</button>
+
+            <br><br>
+
+            <div class="alert alert-success hidden" id="security-question-right">
+                That's right!
+                <button class="btn btn-link" id="security-question-next">Next question</button>
+                <span class="user-password-reveal hidden">
+                    Your password is
+                    <strong class="field-user-password"></strong>.
+                    Close this popup to log in!
+                </span>
             </div>
-            <div class="invalid-feedback">
+            <div class="alert alert-danger hidden" id="security-question-wrong">
                 Sorry, try again!
             </div>
         </div>
       </div>
-      <!-- <div class="modal-footer">
+      <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div> -->
+      </div>
     </div>
   </div>
 </div>
