@@ -83,11 +83,11 @@ $(() => {
        let enteredPassword = $('#input-password').val().trim();
 
         if (enteredPassword === activeUser.password) {
-            // right password
+            // right password :)
             $('#incorrect-password').hide();
         }
         else {
-            // wrong password
+            // wrong password :(
             $('#incorrect-password').show();
         }
 
