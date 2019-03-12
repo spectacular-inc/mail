@@ -15,28 +15,85 @@ scripts:
                     <h6 class="card-subtitle mb-2 text-muted">Log in with your @spectacular.com account</h6>
                 </div>
 
-                <form>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" autocomplete="off" placeholder="Enter your email">
+                <div id="username-form">
+                    <div class="form-group">
+                        <label for="input-email">Email address</label>
+                        <input type="email" class="form-control" id="input-email" autocomplete="off" placeholder="Enter your email">
+                    </div>
+                    <button class="btn btn-primary btn-block" id="email-next" disabled>Next</button>
                 </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" autocomplete="off" placeholder="Enter your password">
+                <form id="password-form" class="hidden">
+                    <p>
+                        Hi, <strong class="field-name"></strong>
+                        (<span class="field-email"></span>)!
+                    </p>
+                    <div class="form-group">
+                        <label for="input-password">Password</label>
+                        <input type="password" class="form-control" id="input-password" autocomplete="off" placeholder="Enter your password">
+                    </div>
+
+                    <button href="forgot.html" class="btn btn-link" id="forgot-password">Forgot password?</button>
+
+                    <button class="btn btn-success btn-block" id="login-button">Log In</button>
+                </form>
+
+
+                <div class="alert alert-danger hidden" id="incorrect-password" role="alert" style="margin-top: 1rem;">
+                    Wrong password!
                 </div>
 
-                <p>
-                <a href="forgot.html">Forgot password</a>
-                </p>
-
-                <button type="submit" class="btn btn-primary" id="login-button">Log In</button>
-
-                <div class="alert alert-danger" id="incorrect-password" role="alert" style="display: none; margin-top: 1rem;">
-                    Sorry, that password is incorrect! <a href="forgot.html">Forgot your password?</a>
-                </div>
                 </form>
             </div>
         </div>
         <div class="col-sm-3"></div>
     </div>
+</div>
+
+<div class="modal fade" id="forgot-password-modal" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Forgot Password</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>
+            Hello, <strong class="field-name"></strong>!
+            Let's help you get your password. Just answer these security questions.
+        </p>
+
+        <h2>Question
+            <strong class="field-security-question-number"></strong>
+            of <span class="field-security-question-total"></span></h2>
+
+       <div class="form-group">
+            <label for="security-question" class="field-security-question-text"></label>
+            <input type="text" class="form-control" id="security-question-input"
+                placeholder="Enter your answer" autocomplete="off" required>
+            <button class="btn btn-primary" id="security-question-check">Check</button>
+
+            <br><br>
+
+            <div class="alert alert-success hidden" id="security-question-right">
+                That's right!
+                <button class="btn btn-link" id="security-question-next">Next question</button>
+                <span id="user-password-reveal" class="hidden">
+                    Your password is
+                    <strong class="field-user-password"></strong>.
+                    <a href="#" class="btn btn-link" data-dismiss="modal">Close this popup</a> to log in!
+                </span>
+            </div>
+            <div class="alert alert-danger hidden" id="security-question-wrong">
+                Sorry, try again!
+            </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
 </div>
