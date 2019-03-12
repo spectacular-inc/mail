@@ -1,18 +1,26 @@
-const accounts = {
-    "marioc@spectacular.com": {
+const accounts = [
+    {
+        email: "marioc@spectacular.com",
         name: "Mario Clemente",
-        password: "TnTyLX" },
-    "estella@spectacular.com": {
+        password: "TnTyLX"
+    },
+    {
+        email: "estella@spectacular.com",
         name: "Estella Lee",
-        password: "password" },
-    "dcart@spectacular.com": {
+        password: "password"
+    },
+    {
+        email: "dcart@spectacular.com",
         name: "Devin Cartwright",
-        password: "Picatsso" },
-    "pdesai@spectacular.com": {
+        password: "Picatsso"
+    },
+    {
+        email: "pdesai@spectacular.com",
         name: "Priya Desai",
         password: "landofthefreehomeofthebingers",
-        forgotPassword: true },
-};
+        forgotPassword: true
+    }
+];
 
 // priya's security questions
 const securityQuestions = [
@@ -33,14 +41,16 @@ const securityQuestions = [
 let currentSecurityQuestionIndex = 0;
 
 // the person who is logging in
-let activeEmail = null;
+let activeUser = null;
 
 
 $(() => {
 
     $('#input-email').on('keydown keyup change', e => {
         // only enable "next" button if a valid email is entered
-        if(accounts.hasOwnProperty($(e.currentTarget).val())) {
+        let validEmails = accounts.map(acc => acc.email);
+        let enteredEmail = $(e.currentTarget).val();
+        if(validEmails.indexOf(enteredEmail) >= 0) {
             $('#email-next').removeAttr('disabled');
         }
         else {
@@ -50,22 +60,20 @@ $(() => {
 
    $('#email-next').click(e => {
        // handle "next" button after email click
-       activeEmail = $('#input-email').val();
 
-       const person = accounts[activeEmail];
-       $('.field-email').html(activeEmail);
-       $('.field-name').html(person.name);
+       // figure out who was chosen based on the inputted email
+       // (we have already checked that there is SOME valid email)
+       let enteredEmail = $('#input-email').val();
+       activeUser = accounts.filter(acc => acc.email === enteredEmail)[0];
+
+       $('.field-email').html(activeUser.email);
+       $('.field-name').html(activeUser.name);
 
        $('#username-form').hide();
        $('#password-form').show();
 
        // show the forgot password form if the person should have it
-       if (person.forgotPassword) {
-           $('#forgot-password-holder').show();
-       }
-       else {
-           $('#forgot-password-holder').hide();
-       }
+       $('#forgot-password').toggle(activeUser.forgotPassword);
 
        // prevent form submission
        e.preventDefault();
@@ -74,7 +82,7 @@ $(() => {
    $('#login-button').click(e => {
        let enteredPassword = $('#input-password').val().trim();
 
-        if (enteredPassword === accounts[activeEmail].password) {
+        if (enteredPassword === activeUser.password) {
             // right password
             $('#incorrect-password').hide();
         }
@@ -111,6 +119,24 @@ $(() => {
        let acceptedAnswers = securityQuestion.answers.map(ans => ans.toLowerCase());
        let isCorrectAnswer = acceptedAnswers.indexOf(userAnswer) >= 0;
 
+       // if this is the final question & they got it right,
+       // don't show the "next" button -- instead just show
+       // the password (in the "correct answer" feedback field, which we will show later)
+        if (isCorrectAnswer && currentSecurityQuestionIndex === securityQuestions.length - 1) {
+            // first, hide the next button
+            $('#security-question-next').hide();
+
+            // get this user's password
+            // (it's priya, but to be robust we'll programmatically find one)
+            let user = accounts.filter(acc => acc.forgotPassword)[0];
+
+            // fill in password
+            $('.field-user-password').html(user.password);
+
+            // show the field with the password
+            $('#user-password-reveal').show();
+       }
+
        // toggle feedback states
        $('#security-question-right').toggle(isCorrectAnswer);
        $('#security-question-wrong').toggle(!isCorrectAnswer);
@@ -119,28 +145,8 @@ $(() => {
    });
 
    $('#security-question-next').click(e => {
-       // TODO this logic is in the wrong place. this button should be hidden
-       // as soon as the user hits `check`.
-       if (currentSecurityQuestionIndex === securityQuestions.length - 1) {
-           // if this is the last security question, just give the password
-
-           // first, hide the next button
-           $('#security-question-next').hide();
-
-           // get this user's password
-           // (it's priya, but to be robust we'll programmatically find one)
-           let user = accounts.filter(acc => acc.forgotPassword)[0];
-
-           // fill in password
-           $('.field-user-password').html(user.password);
-
-           // show the field with the password
-           $('#user-password-reveal').show();
-       }
-       else {
-           // otherwise, show the next question
-           loadSecurityQuestion(currentSecurityQuestionIndex + 1);
-       }
+       // this function will take care of all UI updates
+       loadSecurityQuestion(currentSecurityQuestionIndex + 1);
 
        e.preventDefault();
    });
