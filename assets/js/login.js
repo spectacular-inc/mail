@@ -14,6 +14,20 @@ const accounts = {
         forgotPassword: true },
 };
 
+const securityQuestions = [
+    {
+        id: 1,
+        question: "What is your favorite book?",
+        hint: "It's the key to my heart",
+        answer: "Harry Potter"
+    },
+    {
+        id: 2,
+        question: "What is your doctor's name?",
+        hint: "I swear
+    }
+]
+
 // the person who is logging in
 let activeEmail = null;
 
@@ -54,10 +68,13 @@ $(() => {
    });
 
    $('#forgot-password').click(e => {
-       // assuming this is Priya
-
-
        e.preventDefault();
+
+       // assuming this is Priya
+       // open the forgot password modal
+       $('#forgot-password-modal').modal('show');
+
+
    });
 
    $('#login-button').click(e => {
