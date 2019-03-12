@@ -2,22 +2,26 @@ const accounts = [
     {
         email: "marioc@spectacular.com",
         name: "Mario Clemente",
-        password: "TnTyLX"
+        password: "TnTyLX",
+        slug: "iTnPYiDLVvXPy0sW6N8y"
     },
     {
         email: "estella@spectacular.com",
         name: "Estella Lee",
-        password: "qwerty123!"
+        password: "qwerty123!",
+        slug: "4DwE8vDhUZHqBSRfnF9V"
     },
     {
         email: "dcart@spectacular.com",
         name: "Devin Cartwright",
-        password: "Picatsso"
+        password: "Picatsso",
+        slug: "8NrmU2BIflHwa2Hzxhuf"
     },
     {
         email: "pdesai@spectacular.com",
         name: "Priya Desai",
         password: "landofthefreehomeofthebingers",
+        slug: "2lahVBUNiYJNCBJx3FXA",
         forgotPassword: true
     }
 ];
