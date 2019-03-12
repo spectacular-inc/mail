@@ -22,7 +22,7 @@ $(() => {
 
     $('#input-email').on('keydown keyup change', e => {
         // only enable "next" button if a valid email is entered
-        if(accounts.hasOwnProperty($(this).val())) {
+        if(accounts.hasOwnProperty($(e.currentTarget).val())) {
             $('#email-next').removeAttr('disabled');
         }
         else {
