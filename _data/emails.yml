@@ -1,101 +1,93 @@
-- subject: Lost badge
-  date: April 21, 2099
-  people: Estella, me
-  id: 1
-  emails:
-    - from: Priya Desai
-      from_email: pdesai@spectacular.com
-      to: Estella Lee
-      to_email: estella@spectacular.com
-      message: |
-        Estella, where on earth did you put my badge?! I put it
-        in my backpack but I can't find it anywhere.
-    - from: Estella Lee
-      from_email: estella@spectacular.com
-      to: Priya Desai
-      to_email: pdesai@spectacular.com
-      message: |
-        I swear I have didn't do anything, Priya! You told me to keep your
-        backpack safe when that robot tour group came so I used that lock
-        on your desk to secure it!
-
-        I'm so, so sorry to make you mad at me! I just wanted to help!
-    - from: Priya Desai
-      from_email: pdesai@spectacular.com
-      to: Estella Lee
-      to_email: estella@spectacular.com
-      message: |
-        Right... so what's the lock code?
-    - from: Estella Lee
-      from_email: estella@spectacular.com
-      to: Priya Desai
-      to_email: pdesai@spectacular.com
-      message: |
-        Oh, it's on my desk! I just remembered I accidentally wrote
-        the code down backwards!
-    - from: Priya Desai
-      from_email: pdesai@spectacular.com
-      to: Estella Lee
-      to_email: estella@spectacular.com
-      message: |
-        Why on earth...?
-- subject: London trip itinerary
-  date: April 15, 2099
-  people: Mario, Devin, me
-  id: 2
-  emails:
-    - from: Priya Desai
-      from_email: pdesai@spectacular.com
-      to: Mario Clemente
-      to_email: marioc@spectacular.com
-      message: |
-        Hey Mario, when is our London marketing trip next month?
-    - from: Mario Clemente
-      from_email: marioc@spectacular.com
-      to: Devin Cartwright
-      to_email: dcart@spectacular.com
-      message: |
-        Not sure, Devin?
-    - from: Devin Cartwright
-      from_email: dcart@spectacular.com
-      to: Mario Clemente
-      to_email: marioc@spectacular.com
-      message: |
-        It's May 5th, 2099! As long as we don't go out of business
-        by then hahahahaha
-    - from: Priya Desai
-      from_email: pdesai@spectacular.com
-      to: Devin Cartwright
-      to_email: dcart@spectacular.com
-      message: |
-        Don't jinx us, Devin! Seriously! We'll be fine.
-- subject: Designs for next version of Sonia Specs
-  date: April 12, 2099
-  people: Devin, me
-  id: 3
-  emails:
-    - from: Devin Cartwright
-      from_email: dcart@spectacular.com
-      to: Priya Desai
-      to_email: pdesai@spectacular.com
-      message: |
-        Heyo Priya, what do you think of these new designs for
-        the next version of the Sonia Specs? They look pretty
-        sick, if you ask me.
-    - from: Priya Desai
-      from_email: pdesai@spectacular.com
-      to: Devin Cartwright
-      to_email: dcart@spectacular.com
-      message: |
-        Looks fine to me, but I worry the nose bridge is a little too wide
-        for kids to wear them comfortably.
-
-        (Although should we really be selling to kids? I guess, if they
-        want these glasses so badly...)
-    - from: Devin Cartwright
-      from_email: dcart@spectacular.com
-      to: Priya Desai
-      to_email: pdesai@spectacular.com
-      message: |
-        Good catch! I'll get on that after my trip to New Zealand this weekend.
-        Welp, my teleport pod awaits! Catch ya later!
+- in_inbox_of: pdesai
+  subject: Lost badge
+  date: March 29, 2104
+  from: estella
+  to: pdesai
+  messages:
+    - from: pdesai
+      to: estella
+      text: |
+        Estella, where on earth did you put my badge? I can't find it
+        anywhere and suspect this was one of your and Devin's pranks
+        on your poor product manager.
+    - from: estella
+      to: pdesai
+      text: |
+        OMG no it wasn't, Priya! I just locked it in a computer bag for
+        safekeeping! The code is 5924. Is that OK??? Sorry!!!
+- in_inbox_of: marioc
+  subject: Ads and Stock Values
+  date: March 19, 2104
+  from: pdesai
+  to: marioc
+  messages:
+    - from: pdesai
+      to: marioc
+      text: |
+        Hey! Congrats on the great ad campaign! I see you put up your
+        ads and their impact on the board. Last time I checked our
+        stock value was at 400. With the new ads, what are we at now?
+- in_inbox_of: dcart
+  subject: Super important work thing
+  date: March 23, 2104
+  from: dcart
+  to: estella
+  messages:
+    - from: dcart
+      to: estella
+      text: Knock Knock
+    - from: estella
+      to: dcart
+      text: Seriously, Devin? Who's there?
+    - from: dcart
+      to: estella
+      text: orange
+    - from: estella
+      to: dcart
+      text: sigh... orange who
+    - from: dcart
+      to: estella
+      text: "ORANGE you glad I ended the joke early so you can get back to work?? :P"
+- in_inbox_of: estella
+  subject: URGENT - Room Remodel Request
+  date: March 30, 2104
+  to: pdesai
+  from: estella
+  messages:
+    - from: estella
+      to: pdesai
+      text: |
+        I’ve been reading about this new science about energy and harmony
+        and our labs layout is a recipe for disaster. The way the entrances
+        are placed is bad energy and we should get rid of them in favor of
+        one on the east side so we enter facing the direction of success and
+        luck so our projects go well.
+    - from: pdesai
+      to: estella
+      text: Sigh, can we just go back to work and talk about this later?
+- in_inbox_of: estella
+  subject: Sensor Repair
+  date: March 25, 2019
+  to: estella
+  from: pdesai
+  messages:
+    - from: pdesai
+      to: estella
+      text: |
+        Hey Estella, Turns out the color sensor on the training robot
+        was busted so I’ve put it in storage for now and we can
+        talk later to figure out a replacement. It didn’t sense
+        markers that were similar color of the gridlines on the course,
+        resulting in buggy readings. Hope this didn’t cause any issues!
+- in_inbox_of: estella
+  subject: Badge replacement
+  date: March 31, 2019
+  to: marioc
+  from: estella
+  messages:
+    - from: estella
+      to: marioc
+      text: |
+        Hey Mario, I locked my badge in my cabinet and I can’t get it out.
+        I don’t need that one deactivated because I’m sure I’ll figure it
+        out, can you just get me another one that I can use in the meantime?
