@@ -1,4 +1,4 @@
-let accounts = {
+const accounts = {
     "marioc@spectacular.com": {
         name: "Mario Clemente",
         password: "password" },
@@ -18,9 +18,9 @@ let accounts = {
 let activeEmail = null;
 
 
-$(function(){
+$(() => {
 
-    $('#input-email').on('keydown keyup change', function(e){
+    $('#input-email').on('keydown keyup change', e => {
         // only enable "next" button if a valid email is entered
         if(accounts.hasOwnProperty($(this).val())) {
             $('#email-next').removeAttr('disabled');
@@ -30,11 +30,11 @@ $(function(){
         }
     });
 
-   $('#email-next').click(function(e){
+   $('#email-next').click(e => {
        // handle "next" button after email click
        activeEmail = $('#input-email').val();
 
-       let person = accounts[activeEmail];
+       const person = accounts[activeEmail];
        $('.field-email').html(activeEmail);
        $('.field-name').html(person.name);
 
@@ -53,7 +53,7 @@ $(function(){
        e.preventDefault();
    });
 
-   $('#login-button').click(function(){
-       
+   $('#login-button').click(() => {
+
    });
 });
