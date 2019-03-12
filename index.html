@@ -70,25 +70,25 @@ scripts:
             of <span class="field-security-question-total"></span></h2>
 
        <div class="form-group">
+
             <label for="security-question" class="field-security-question-text"></label>
             <input type="text" class="form-control" id="security-question-input"
                 placeholder="Enter your answer" autocomplete="off" required>
-            <button class="btn btn-primary" id="security-question-check">Check</button>
+        </div>
 
-            <br><br>
+        <button class="btn btn-primary" id="security-question-check">Check</button>
 
-            <div class="alert alert-success hidden" id="security-question-right">
-                That's right!
-                <button class="btn btn-link" id="security-question-next">Next question</button>
-                <span id="user-password-reveal" class="hidden">
-                    Your password is
-                    <strong class="field-user-password"></strong>.
-                    <a href="#" class="btn btn-link" data-dismiss="modal">Close this popup</a> to log in!
-                </span>
-            </div>
-            <div class="alert alert-danger hidden" id="security-question-wrong">
-                Sorry, try again!
-            </div>
+        <div class="alert alert-success hidden" id="security-question-right">
+            That's right!
+            <button class="btn btn-link" id="security-question-next">Next question</button>
+            <span id="user-password-reveal" class="hidden">
+                Your password is
+                <strong class="field-user-password"></strong>.
+                <a href="#" data-dismiss="modal">Close this popup</a> to log in!
+            </span>
+        </div>
+        <div class="alert alert-danger hidden" id="security-question-wrong">
+            Sorry, try again!
         </div>
       </div>
       <div class="modal-footer">
