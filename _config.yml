@@ -18,6 +18,9 @@ plugins:
 
 baseurl: /mail
 
+# From https://help.github.com/en/articles/repository-metadata-on-github-pages
+repository: spectacular-inc/mail
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
