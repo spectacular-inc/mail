@@ -15,37 +15,35 @@ scripts:
                     <h6 class="card-subtitle mb-2 text-muted">Log in with your @spectacular.com account</h6>
                 </div>
 
-                <form id="username-form">
+                <div id="username-form">
                     <div class="form-group">
                         <label for="input-email">Email address</label>
                         <input type="email" class="form-control" id="input-email" autocomplete="off" placeholder="Enter your email">
                     </div>
-                    <button class="btn btn-primary">Next</button>
-                </form>
+                    <button class="btn btn-primary btn-block" id="email-next" disabled>Next</button>
+                </div>
                 <form id="password-form" class="hidden">
                     <p>
-                        Hi, <span class="$firstname"></span>!
-                        (<span class="$email"></span>)
+                        Hi, <strong class="field-name"></strong>
+                        (<span class="field-email"></span>)!
                     </p>
                     <div class="form-group">
                         <label for="input-password">Password</label>
                         <input type="password" class="form-control" id="input-password" autocomplete="off" placeholder="Enter your password">
                     </div>
+
+                    <p id="forgot-password-holder" class="hidden">
+                        <a href="forgot.html">Forgot password?</a>
+                    </p>
+
+                    <button class="btn btn-success btn-block" id="login-button">Log In</button>
                 </form>
-                <!-- <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" autocomplete="off" placeholder="Enter your password">
+
+
+                <div class="alert alert-danger hidden" id="incorrect-password" role="alert" style="margin-top: 1rem;">
+                    Sorry, that password is incorrect! <a href="forgot.html">Forgot your password?</a>
                 </div>
 
-                <p>
-                <a href="forgot.html">Forgot password</a>
-                </p>
-
-                <button type="submit" class="btn btn-primary" id="login-button">Log In</button>
-
-                <div class="alert alert-danger" id="incorrect-password" role="alert" style="display: none; margin-top: 1rem;">
-                    Sorry, that password is incorrect! <a href="forgot.html">Forgot your password?</a>
-                </div> -->
                 </form>
             </div>
         </div>
