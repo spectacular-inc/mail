@@ -16,18 +16,25 @@
             </ul>
         </div>
         <div class="col-md-8">
-            <div class="list-group">
-                {% for email in site.data.emails %}
-                    <a href="pdesai-emails/{{ email.id }}.html" class="list-group-item list-group-item-action">
-                        <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">{{ email.subject }}</h5>
-                        <small>{{ email.date }}</small>
+            {% for email in site.data.emails %}
+                {% if email.in_inbox_of == page.username %}
+                    <div class="card">
+                        <div class="card-header">
+                            {{ email.subject }} ({{ email.date }})
+                            -- {{ email.to }}, {{ email.from }}
                         </div>
-                        <p class="mb-1">{{ email.people }}</p>
-                        <small>{{ email.emails.last.message }}</small>
-                    </a>
-                {% endfor %}
-            </div>
+                        <ul class="list-group list-group-flush">
+                            {% for message in email.messages %}
+                                <li class="list-group-item">
+                                    <p>From: {{ message.from }}, To: {{ message.to }}</p>
+                                    <p>{{ message.text }}
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <br><br>
+                {% endif %}
+            {% endfor %}
         </div>
     </div>
 </div>
