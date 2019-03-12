@@ -53,7 +53,25 @@ $(() => {
        e.preventDefault();
    });
 
-   $('#login-button').click(() => {
+   $('#forgot-password').click(e => {
+       // assuming this is Priya
 
+
+       e.preventDefault();
+   });
+
+   $('#login-button').click(e => {
+       let enteredPassword = $('#input-password').val().trim();
+
+        if (enteredPassword === accounts[activeEmail].password) {
+            // right password
+            $('#incorrect-password').hide();
+        }
+        else {
+            // wrong password
+            $('#incorrect-password').show();
+        }
+
+       e.preventDefault();
    });
 });
