@@ -34,15 +34,15 @@ const accounts = [
 const securityQuestions = [
     {
         id: 1,
-        question: "What is your favorite children's book?",
-        hint: "It's the key to my heart",
-        answers: ["Alice in Wonderland"]
-    },
-    {
-        id: 2,
         question: "What is your doctor's name?",
         hint: "I swear I wrote it down somewhere",
         answers: ["Gutierrez", "Dr. Gutierrez", "Dr Gutierrez", "Doctor Gutierrez"]
+    },
+    {
+        id: 2,
+        question: "What is your favorite children's book?",
+        hint: "It's the key to my heart",
+        answers: ["Alice in Wonderland"]
     },
     {
         id: 3,
