@@ -70,10 +70,9 @@
       to: pdesai
       text: |
         I’ve been reading about this new science about energy and harmony
-        and our labs layout is a recipe for disaster. The way the entrances
-        are placed is bad energy and we should get rid of them in favor of
-        one on the east side so we enter facing the direction of success and
-        luck so our projects go well.
+        and our lab's layout is a recipe for disaster. The door placement
+        is bad energy and we should tear it all down and add new ones. We
+        should start ALL PATHS facing WEST to ensure success in life.
     - from: pdesai
       to: estella
       text: Sigh, can we just go back to work and talk about this later?
@@ -89,11 +88,11 @@
         Hey Estella, Turns out the color sensor on the training robot
         was busted so I’ve put it in storage for now and we can
         talk later to figure out a replacement. It didn’t sense
-        markers that were similar color of the gridlines on the course,
+        markers that were same color of the gridlines on the course,
         resulting in buggy readings. Hope this didn’t cause any issues!
 - in_inbox_of: estella
   subject: Badge replacement
-  date: March 31, 2019
+  date: March 26, 2019
   to: marioc
   from: estella
   messages:
