@@ -52,7 +52,7 @@
       text: "ORANGE you glad I ended the joke early so you can get back to work?? :P"
 - in_inbox_of: dcart
   subject: Game night
-  date: March 23, 2104
+  date: March 25, 2104
   from: dcart
   to: estella
   messages:
@@ -62,7 +62,7 @@
     - from: dcart
       to: estella
       text: Yeah, but this time I want to play with my modified rules. 1 red = 4 pts, 1 green = 2 pts, and 1 blue = 3pts.
- - in_inbox_of: estella
+- in_inbox_of: estella
   subject: URGENT - Room Remodel Request
   date: March 30, 2104
   to: pdesai
