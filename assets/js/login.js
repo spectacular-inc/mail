@@ -24,7 +24,7 @@ const accounts = [
         email: "pdesai@spectacular.com",
         username: "pdesai",
         name: "Priya Desai",
-        password: "landofthefreehomeofthebingers",
+        password: "binge1337videos",
         slug: "2lahVBUNiYJNCBJx3FXA",
         forgotPassword: true
     }
