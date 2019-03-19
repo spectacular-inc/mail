@@ -24,9 +24,11 @@
     - from: pdesai
       to: marioc
       text: |
-        Hey! Congrats on the great ad campaign! I see you put up your
-        ads and their impact on the board. Last time I checked our
-        stock value was at 400. With the new ads, what are we at now?
+        Hey! Congrats on the pet targeted ad campaign! I see you put up your
+        ad up on the board. Last time I checked our
+        stock value was at 400. For each of the different species, our stock went up by 200! 
+        Great insight to diversify the pet options available.
+        With the new ads, what are we at now?
 - in_inbox_of: dcart
   subject: Super important work thing
   date: March 23, 2104
@@ -48,7 +50,7 @@
     - from: dcart
       to: estella
       text: "ORANGE you glad I ended the joke early so you can get back to work?? :P"
- - in_inbox_of: dcart
+- in_inbox_of: dcart
   subject: Game night
   date: March 23, 2104
   from: dcart
