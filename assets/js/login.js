@@ -3,7 +3,7 @@ const accounts = [
         email: "marioc@spectacular.com",
         username: "marioc",
         name: "Mario Clemente",
-        password: "TnTyLX",
+        password: "TNTYLX",
         slug: "iTnPYiDLVvXPy0sW6N8y"
     },
     {
@@ -17,7 +17,7 @@ const accounts = [
         email: "dcart@spectacular.com",
         username: "dcart",
         name: "Devin Cartwright",
-        password: "Picatsso",
+        password: "ADEGJK",
         slug: "8NrmU2BIflHwa2Hzxhuf"
     },
     {
