@@ -17,7 +17,7 @@ const accounts = [
         email: "dcart@spectacular.com",
         username: "dcart",
         name: "Devin Cartwright",
-        password: "ADEGJK",
+        password: "DEKNVZ",
         slug: "8NrmU2BIflHwa2Hzxhuf"
     },
     {
