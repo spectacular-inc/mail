@@ -3,7 +3,7 @@ const accounts = [
         email: "marioc@spectacular.com",
         username: "marioc",
         name: "Mario Clemente",
-        password: "TNTYLX",
+        password: "TILYN",
         slug: "iTnPYiDLVvXPy0sW6N8y"
     },
     {
