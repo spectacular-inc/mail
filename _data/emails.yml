@@ -72,27 +72,13 @@
         I’ve been reading about this new science about energy and harmony
         and our lab's layout is a recipe for disaster. The door placement
         is bad energy and we should tear it all down and add new ones. We
-        should start ALL PATHS facing WEST to ensure success in life.
+        should start ALL PATHS facing <b>WEST</b> to ensure success in life.
     - from: pdesai
       to: estella
-      text: Sigh, can we just go back to work and talk about this later?
-- in_inbox_of: estella
-  subject: Sensor Repair
-  date: March 25, 2019
-  to: estella
-  from: pdesai
-  messages:
-    - from: pdesai
-      to: estella
-      text: |
-        Hey Estella, Turns out the color sensor on the training robot
-        was busted so I’ve put it in storage for now and we can
-        talk later to figure out a replacement. It didn’t sense
-        markers that were same color of the gridlines on the course,
-        resulting in buggy readings. Hope this didn’t cause any issues!
+      text: No.
 - in_inbox_of: estella
   subject: Badge replacement
-  date: March 26, 2019
+  date: March 25, 2019
   to: marioc
   from: estella
   messages:
@@ -102,3 +88,17 @@
         Hey Mario, I locked my badge in my cabinet and I can’t get it out.
         I don’t need that one deactivated because I’m sure I’ll figure it
         out, can you just get me another one that I can use in the meantime?
+- in_inbox_of: estella
+  subject: Sensor Repair
+  date: March 26, 2019
+  to: estella
+  from: pdesai
+  messages:
+    - from: pdesai
+      to: estella
+      text: |
+        Hey Estella, Turns out the color sensor on the training robot
+        was busted so I’ve put it in storage for now and we can
+        talk later to figure out a replacement. It <b>didn’t detect</b>
+        glasses that were same color of the gridlines on the course,
+        resulting in buggy readings. Hope this didn’t cause any issues!
